@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(DOMAIN),
   title: {
-    default: "Salmorejo Tech 2026 | El Evento Tecnológico de Córdoba",
-    template: "%s | Salmorejo Tech 2026",
+    default: "Salmorejo Tech 2027 | El Evento Tecnológico de Córdoba",
+    template: "%s | Salmorejo Tech 2027",
   },
   description:
     "Únete a la mayor cita tecnológica de Córdoba. Networking, ponencias de primer nivel y mucho salmorejo. ¡Call for Papers disponible!",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
   // --- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) ---
   openGraph: {
-    title: "Salmorejo Tech 2026 | El Evento Tecnológico de Córdoba",
+    title: "Salmorejo Tech 2027 | El Evento Tecnológico de Córdoba",
     description:
       "Únete a la mayor cita tecnológica de Córdoba. Networking, ponencias de primer nivel y mucho salmorejo. ¡Call for Papers disponible!",
     url: SITE_BASE_PATH,
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   // --- Twitter Card ---
   twitter: {
     card: "summary_large_image",
-    title: "Salmorejo Tech 2026 | El Evento Tecnológico de Córdoba",
+    title: "Salmorejo Tech 2027 | El Evento Tecnológico de Córdoba",
     description:
       "Únete a la mayor cita tecnológica de Córdoba. Networking, ponencias de primer nivel y mucho salmorejo. ¡Call for Papers disponible!",
     site: "@AulaSL",
@@ -100,7 +100,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Aula de Software Libre",
               url: "https://www.uco.es/aulasoftwarelibre/",
-              logo: "https://salmorejo.tech/2026/opengraph-image.jpg",
+              logo: "https://salmorejo.tech/2027/opengraph-image.jpg",
               sameAs: [
                 "https://twitter.com/AulaSL",
                 "https://www.instagram.com/aulasoftwarelibre/",
