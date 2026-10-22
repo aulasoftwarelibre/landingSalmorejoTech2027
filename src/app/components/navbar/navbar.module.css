@@ -1,5 +1,196 @@
-.text{
+.closeButton {
+  display: none;
+}
+.navbar {
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(30px) saturate(120%);
+  -webkit-backdrop-filter: blur(30px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50em;
+  padding: 0.3rem 1.5rem;
+  width: clamp(340px, 95%, 1100px);
+  margin: 1.5rem auto;
+  display: flex;
+  align-items: center;
+  box-shadow:
+    0 8px 32px 0 rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 0 rgba(0, 0, 0, 0.01);
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1000;
+}
+.navbarOpen {
+  border-radius: 1.5rem;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 1rem;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+.hamburger span {
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.3s;
+  transform-origin: center;
+  border-radius: 2px;
+}
+.navList {
+  list-style: none;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  justify-content: space-around;
+}
+.link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.35rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 2rem;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 50px;
+  transition: all 0.25s ease;
+}
+.slider {
+  background: 79CB8A;
 
-  color:lightgrey;
+  border-radius: 50em;
+  position: absolute;
+  top: -0.3rem;
+  bottom: -0.3rem;
+  left: 0;
+  z-index: 1;
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow:
+    0 4px 16px rgba(255, 255, 255, 0.03),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(6px);
+}
+.link:hover {
+  color: 79CB8A;
+  text-shadow: 79CB8A;
+}
 
+
+
+@media (max-width: 1200px) {
+  .link {
+    padding: 0.4rem 1rem;
+    font-size: 1.15rem;
+  }
+  .navList {
+    gap: 0.2rem;
+    padding: 0;
+  }
+  .navbar {
+    padding: 0.3rem 1rem;
+  }
+  .slider {
+    top: -0.3rem;
+    bottom: -0.3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    width: auto !important;
+    min-width: 60px;
+    max-width: 90%;
+    margin: 1rem auto !important;
+    border-radius: 50px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    padding: 0.5rem 1rem;
+    min-height: 60px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .navbar.navbarOpen {
+    border-radius: 1.5rem !important;
+  }
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+    align-self: center;
+  }
+  .navbarOpen .hamburger {
+    align-self: flex-end;
+  }
+  .navList {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.5s ease,
+      opacity 0.3s ease;
+    justify-content: flex-start;
+  }
+  .navListActive {
+    opacity: 1;
+    max-height: 100vh;
+  }
+  .navList li {
+    width: 100%;
+    text-align: left;
+    border-bottom: none;
+  }
+  .link {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+  }
+  .link:hover,
+  .link:focus,
+  .link:active {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    background: 79CB8A;
+
+    box-shadow: 79CB8A;
+     
+    backdrop-filter: blur(6px);
+  }
+  .slider {
+    display: none !important;
+  }
+  .closeButton {
+    display: none;
+  }
 }
