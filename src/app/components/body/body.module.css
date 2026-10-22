@@ -1,6 +1,23 @@
-.text{
-
-  color: black;
-
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
 }
 
+.image{
+  width:90% ;
+  max-width: 1000px;
+  height: auto;
+  margin: 20px auto;
+  margin-top: 11%;
+}
+
+.boton{
+  text-decoration: none;
+  justify-content: center;
+  color: white;
+  
+}
