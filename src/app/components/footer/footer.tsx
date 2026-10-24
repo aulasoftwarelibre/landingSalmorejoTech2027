@@ -88,15 +88,17 @@ const socials: RRSS[]=[
 ];
 
 
-
-
-
-
-
 export default function footer() {
   return (
     <footer className={styles.footer}>
     <div className ={styles.info}>
+    <p className={styles.organiza}>Organiza:</p>
+    <Image
+        src={logoAula}
+        alt="Logo ASL"
+        width={132}
+        height={132}
+      />
       <div className={styles.rrssContainer}>
         {socials.map((social) =>(
           <div key={social.id}>
