@@ -1,10 +1,15 @@
 "use client";
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import inicioImage from "../../assets/inicio.png";
+import edicionesAnterioresImage from "../../assets/edicionesAnteriores.png";
+import sobreNosotrosImage from "../../assets/sobreNosotros.png";
+import contactoImage from "../../assets/contacto.png";
 
 
-//Reutilizado del año anterior 
+//Reutilizado del año anterior ya que literalmente es el mismo
 
 export default function Navbar() {
   const [sliderStyle, setSliderStyle] = useState({
@@ -16,7 +21,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navListRef = useRef<HTMLUListElement>(null);
 
-  // Cerrar menú móvil al hacer clic fuera
+  // Cerrar menu móvil al hacer clic fuera
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -51,7 +56,11 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={styles.navbar}>
+    <nav
+      className={`${styles.navbar} ${
+        isMobileMenuOpen ? styles.navbarOpen : ""
+      }`}
+    >
       {!isMobileMenuOpen && (
         <button
           className={styles.hamburger}
@@ -70,7 +79,7 @@ export default function Navbar() {
         }`}
         onMouseLeave={handleMouseLeave}
       >
-        {/* MOVIDO: El slider ahora está DENTRO de la lista para corregir el posicionamiento */}
+        {/* MOVIDO: El slider ahora esta DENTRO de la lista para corregir el posicionamiento */}
         <div className={styles.slider} style={sliderStyle} />
 
         {isMobileMenuOpen && (
@@ -88,7 +97,9 @@ export default function Navbar() {
           onClick={() => setIsMobileMenuOpen(false)}
         >
           <Link href="/" className={styles.link}>
+            <Image src={inicioImage} alt="" className={styles.hoverImage} />
             Inicio
+            <Image src={inicioImage} alt="" className={styles.hoverImage} />
           </Link>
         </li>
 
@@ -96,8 +107,10 @@ export default function Navbar() {
           onMouseEnter={handleMouseEnter}
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <Link href="/past" className={styles.link}>
+          <Link href="https://salmorejo.tech/2026/" className={styles.link}>
+            <Image src={edicionesAnterioresImage} alt="" className={styles.hoverImage} />
             Edición Anterior
+            <Image src={edicionesAnterioresImage} alt="" className={styles.hoverImage} />
           </Link>
         </li>
 
@@ -111,7 +124,9 @@ export default function Navbar() {
             //AQUI QUIZAS PONER LA PAGINA DEL AULA?
           }
           <Link href="/aboutUs" className={styles.link}>
+            <Image src={sobreNosotrosImage} alt="" className={styles.hoverImage} />
             Sobre Nosotros
+            <Image src={sobreNosotrosImage} alt="" className={styles.hoverImage} />
           </Link>
         </li>
 
@@ -123,11 +138,12 @@ export default function Navbar() {
             href="https://www.uco.es/aulasoftwarelibre/contacto/"
             className={styles.link}
           >
+            <Image src={contactoImage} alt="" className={styles.hoverImage} />
             Contacto
+            <Image src={contactoImage} alt="" className={styles.hoverImage} />
           </Link>
         </li>
       </ul>
     </nav>
   );
 }
-

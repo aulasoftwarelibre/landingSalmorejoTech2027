@@ -68,6 +68,7 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   padding: 0.5rem 2rem;
   display: flex;
+  gap: 0.5rem;
   position: relative;
   z-index: 2;
   text-align: center;
@@ -77,7 +78,7 @@
   transition: all 0.25s ease;
 }
 .slider {
-  background: 79CB8A;
+  background: #79CB8A;
 
   border-radius: 50em;
   position: absolute;
@@ -93,8 +94,20 @@
   backdrop-filter: blur(6px);
 }
 .link:hover {
-  color: 79CB8A;
-  text-shadow: 79CB8A;
+  color: #000;
+}
+
+.hoverImage {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.link:hover .hoverImage,
+.link:focus-visible .hoverImage {
+  opacity: 1;
 }
 
 
@@ -133,16 +146,29 @@
     min-height: 60px;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
+  .navbar:not(.navbarOpen) {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
   .navbar.navbarOpen {
     border-radius: 1.5rem !important;
   }
+  .navbar:not(.navbarOpen) .navList {
+    display: none;
+  }
   .hamburger {
     display: flex;
-    margin-left: auto;
+    margin-right: auto;
     align-self: center;
   }
   .navbarOpen .hamburger {
     align-self: flex-end;
+  }
+  .hamburger span {
+    background-color: #000;
   }
   .navList {
     flex-direction: column;
@@ -179,12 +205,9 @@
   .link:hover,
   .link:focus,
   .link:active {
-    color: rgba(255, 255, 255, 0.95);
+    color: #000;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
-    background: 79CB8A;
-
-    box-shadow: 79CB8A;
-     
+    background: #79CB8A;
     backdrop-filter: blur(6px);
   }
   .slider {
