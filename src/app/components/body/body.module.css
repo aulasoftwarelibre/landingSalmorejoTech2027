@@ -17,7 +17,30 @@
 
 .boton{
   text-decoration: none;
+  display: flex;
   justify-content: center;
-  color: white;
+  align-items: center;
+  width: 409;
+  max-width: none;
+  height: 132;
+  margin-top: 5px !important;
+  margin: auto;
+  cursor: pointer;
+  color: black;
+  font-size: 1.8rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
+  padding: 10px 0;
+
+  background: white;
+  backdrop-filter: blur(30px) saturate(120%);
+  -webkit-backdrop-filter: blur(30px) saturate(120%);
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 25px; /* Forma de píldora inicial */
+  font-family: "Roboto", "Segoe UI", sans-serif;
+
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Tu transición suave original */
+
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+
+  margin-bottom: 1vh;
   
 }

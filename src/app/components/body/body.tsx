@@ -18,6 +18,13 @@ export default function body() {
           priority
         />
       </div>
+      <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.boton}
+        >
+          Notifícame
+        </a>
 
     </div>
   );
