@@ -90,6 +90,7 @@ const socials: RRSS[]=[
 
 export default function footer() {
   return (
+  <div className={styles.main}>
     <footer className={styles.footer}>
     <div className ={styles.info}>
     <p className={styles.organiza}>Organiza:</p>
@@ -115,5 +116,6 @@ export default function footer() {
       </div>
     </div>
   </footer>
+</div>
   );
 }
