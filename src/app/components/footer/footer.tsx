@@ -8,6 +8,7 @@ import twitterImg from "../../assets/twitterLogo.png"
 import youtubeImg from "../../assets/youtubeLogo.png";
 import githubImg from "../../assets/githubLogo.png";
 import logoAula from "../../assets/logoAula.png";
+import { style } from "framer-motion/client";
 
 interface RRSS{
 
@@ -114,6 +115,12 @@ export default function footer() {
           </div>
         ))}
       </div>
+    </div>
+    <div className={styles.contacto}>
+      <p>¡Encuéntranos!</p>
+      <p>Aulasoftwarelibre@uco.es</p>
+      <p>Aulario Averroes</p>
+      <p>(Campus de Rabanales)</p>
     </div>
   </footer>
 </div>
