@@ -20,14 +20,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 409;
+  width: 30%;
   max-width: none;
-  height: 132;
+  height: auto;
+  margin-top: 35px !important;
+  margin: auto;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
+  padding: 10px 0;
+
+  justify-content: center;
+  align-items: center;
+  width: 409px;
+  max-width: none;
+  height: 120px;
   margin-top: 5px !important;
   margin: auto;
   cursor: pointer;
   color: black;
-  font-size: 1.8rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
+  font-size: 3rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
   padding: 10px 0;
 
   background: white;
@@ -35,12 +47,17 @@
   -webkit-backdrop-filter: blur(30px) saturate(120%);
   border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 25px; /* Forma de píldora inicial */
-  font-family: "Roboto", "Segoe UI", sans-serif;
+  font-family: "Lato", sans-serif;
+  text-shadow: 0px 2px 4px #a19c9c;
+  box-shadow: 0px -6px 0px #b0b0b0;
 
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Tu transición suave original */
-
-  font-size: clamp(1.2rem, 3vw, 2.5rem);
-
+  transition: all 0.4s ease; 
   margin-bottom: 1vh;
-  
+}
+
+.boton:hover{
+  background-image: url(../../assets/Boton.png);
+  background-size: 99%;
+  background-repeat: no-repeat;
+  background-position: center bottom 3px;
 }
