@@ -15,49 +15,55 @@
   margin-top: 11%;
 }
 
-.boton{
-  text-decoration: none;
+.boton {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  max-width: none;
-  height: auto;
-  margin-top: 35px !important;
-  margin: auto;
-  cursor: pointer;
-  color: white;
-  font-size: 2rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
-  padding: 10px 0;
-
   justify-content: center;
   align-items: center;
   width: 409px;
   max-width: none;
   height: 120px;
-  margin-top: 5px !important;
-  margin: auto;
-  cursor: pointer;
-  color: black;
-  font-size: 3rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
+  margin: 5px auto 1vh auto;
   padding: 10px 0;
+  cursor: pointer;
+  
+  color: black;
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  text-shadow: 0px 2px 4px #a19c9c;
 
-  background: white;
+
+  background-color: white;
   backdrop-filter: blur(30px) saturate(120%);
   -webkit-backdrop-filter: blur(30px) saturate(120%);
   border: 2px solid rgba(255, 255, 255, 0.08);
-  border-radius: 25px; /* Forma de píldora inicial */
-  font-family: "Lato", sans-serif;
-  text-shadow: 0px 2px 4px #a19c9c;
+  border-radius: 25px;
   box-shadow: 0px -6px 0px #b0b0b0;
 
-  transition: all 0.4s ease; 
-  margin-bottom: 1vh;
+  position: relative; 
+  z-index: 1;
+  overflow: hidden;
 }
 
-.boton:hover{
-  background-image: url(../../assets/Boton.png);
+
+.boton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  
+  background-image: url("../../assets/Boton.png");
   background-size: 99%;
   background-repeat: no-repeat;
   background-position: center bottom 3px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+.boton:hover::before {
+  opacity: 1;
 }
