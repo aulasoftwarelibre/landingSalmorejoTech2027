@@ -98,8 +98,8 @@ export default function footer() {
     <Image
         src={logoAula}
         alt="Logo ASL"
-        width={132}
-        height={132}
+        width={200}
+        height={200}
       />
       <div className={styles.rrssContainer}>
         {socials.map((social) =>(
@@ -108,8 +108,9 @@ export default function footer() {
               <Image
                 src={social.image}
                alt={social.alt}
-                width={24}
-                height={24}
+                width={50}
+                height={50}
+                className={`${styles.image} ${styles.aslLink}`}
               />
             </a>
           </div>
@@ -118,7 +119,10 @@ export default function footer() {
     </div>
     <div className={styles.contacto}>
       <p>¡Encuéntranos!</p>
-      <p>Aulasoftwarelibre@uco.es</p>
+      <a href="mailto:aulasoftwarelibre@uco.es" 
+        className={styles.aslLink}>
+        aulasoftwarelibre@uco.es
+      </a>
       <p>Aulario Averroes</p>
       <p>(Campus de Rabanales)</p>
     </div>
