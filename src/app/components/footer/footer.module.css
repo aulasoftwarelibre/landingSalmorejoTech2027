@@ -62,9 +62,38 @@
 }
 
 .contacto {
-  justify-self: center;
+  justify-self: end;
+  align-self: center;
   text-align: center;
   align-self: center;
   font-family: "Oswald", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
+
+.contacto p{
+
+  margin:0 0 0.8em;
+
+}
+
+.contacto p:last-child{
+
+  margin-bottom: 0;
+
+}
+
+.aslLink{
+
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  transition: trasform 0.3s ease;
+
+}
+
+.aslLink:hover{
+
+transform: scale(1.2);
+
+}
+
