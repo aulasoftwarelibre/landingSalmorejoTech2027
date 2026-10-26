@@ -102,17 +102,14 @@ export default function Footer() {
       />
       <div className={styles.rrssContainer}>
         {socials.map((social) =>(
-          <div key={social.id}>
-            <a href={social.url}>
+          <a key={social.id} href={social.url}>
               <Image
                 src={social.image}
                alt={social.alt}
-                width={50}
-                height={50}
-                className={`${styles.image} ${styles.aslLink}`}
+                width={30}
+                height={30}
               />
             </a>
-          </div>
         ))}
       </div>
     </div>
@@ -121,7 +118,7 @@ export default function Footer() {
         ¡Encuéntranos!
         <br />
         <a
-          href="Aulasoftwarelibre@uco.es"
+          href="mailto:Aulasoftwarelibre@uco.es"
           className={styles.aslLink}
         >
           Aulasoftwarelibre@uco.es
