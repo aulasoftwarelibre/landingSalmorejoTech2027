@@ -67,3 +67,15 @@
 .boton:hover::before {
   opacity: 1;
 }
+
+@media(max-width: 1000px){
+	.image{
+		max-width: 90%;
+	}
+
+	.boton{
+		width: 85%;
+			height:95px;
+		font-size:1.8rem;
+	}
+}
