@@ -68,14 +68,40 @@
   opacity: 1;
 }
 
-@media(max-width: 1000px){
-	.image{
-		max-width: 90%;
-	}
+@media (max-width: 1000px) {
+  .container {
+    --boton-height: 95px;
+    --gap: 24px;
 
-	.boton{
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+    min-height: 100dvh;
+    padding: 24px 0;
+  }
+
+  /* Both children share the same cell, so they are centered on top of each
+     other; the logo is then lifted by half its own height, half the button
+     height and the gap, leaving the button perfectly centered on screen. */
+  .image,
+  .boton {
+    grid-area: 1 / 1;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    max-width: 90%;
+    transform: translateY(calc(-50% - var(--boton-height) / 2 - var(--gap)));
+  }
+
+	.boton {
 		width: 85%;
-			height:95px;
+		height: var(--boton-height);
 		font-size:1.8rem;
 	}
 }
+
+
