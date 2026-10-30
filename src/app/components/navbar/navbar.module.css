@@ -8,7 +8,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 50em;
   padding: 0.3rem 1.5rem;
-  width: clamp(340px, 95%, 1100px);
+  width: clamp(340px, 90%, 1000px);
   margin: 1.5rem auto;
   display: flex;
   align-items: center;
@@ -82,10 +82,11 @@
 
   border-radius: 50em;
   position: absolute;
-  top: -0.3rem;
-  bottom: -0.3rem;
+  top: 0.1rem;
+  bottom: 0.1rem;
   left: 0;
   z-index: 1;
+  transform: scaleX(1.1);
   transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
   box-shadow:
     0 4px 16px rgba(255, 255, 255, 0.03),
@@ -98,11 +99,18 @@
 }
 
 .hoverImage {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   opacity: 0;
   transition: opacity 0.25s ease;
+}
+
+/*
+Girar 180 grados porque estaba al reves la imagen
+*/
+.inicioImage {
+  transform: rotate(180deg);
 }
 
 .link:hover .hoverImage,
@@ -125,8 +133,8 @@
     padding: 0.3rem 1rem;
   }
   .slider {
-    top: -0.3rem;
-    bottom: -0.3rem;
+    top: 0.1rem;
+    bottom: 0.1rem;
   }
 }
 

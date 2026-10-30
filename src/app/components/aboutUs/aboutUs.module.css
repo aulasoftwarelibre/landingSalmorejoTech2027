@@ -19,7 +19,7 @@
 }
 
 .textAbout {
-  color: white;
+  color: black;
   max-width: 100%;
   height: auto;
   font-family: "Oswald", sans-serif;
@@ -35,7 +35,7 @@
 }
 
 .text {
-  color: white;
+  color: black;
   max-width: 100%;
   height: auto;
   font-family: "Oswald", sans-serif;
@@ -52,12 +52,12 @@
 }
 
 .textList {
-  color: white;
+  color: black;
   max-width: 100%;
   height: auto;
   font-family: "Oswald", sans-serif;
   font-size: clamp(1.5rem, 1.5vw, 2rem);
-  font-weight: 300;
+  font-weight: 450;
   line-height: 125%;
   letter-spacing: 4px;
   align-self: center;
