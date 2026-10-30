@@ -1,23 +1,10 @@
 .main{
 
-  position:absolute;
-  bottom: 0;
-  left:0;
+  position:relative;
   width:100%;
   display: grid;
-
+  margin-top: auto;
 }
-/*
-.aslLink {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.aslLink:hover {
-  transform: scale(1.2);
-}
-
-*/
 
 .footer{
 

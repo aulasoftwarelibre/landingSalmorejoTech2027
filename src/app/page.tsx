@@ -8,11 +8,18 @@ export default function Home() {
   return (
     <div className="relative" style={{ minHeight: "100vh" }}>
       <Background />
-      <div style={{position: "relative", zIndex: 10}}>
+      <div 
+        style={{
+            position: "relative", 
+            zIndex: 10,
+            display: "flex",
+            flexDirection: "column",
+            minHeight:"100vh",
+          }}>
+        <Navbar/>
+        <Body />
+        <Footer />
       </div>
-      <Navbar/>
-      <Body />
-      <Footer />
     </div>
   );
 }
