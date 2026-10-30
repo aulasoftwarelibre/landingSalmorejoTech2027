@@ -99,6 +99,7 @@ export default function Footer() {
         alt="Logo ASL"
         width={200}
         height={200}
+        className={styles.logo}
       />
       <div className={styles.rrssContainer}>
         {socials.map((social) =>(
@@ -108,6 +109,7 @@ export default function Footer() {
                alt={social.alt}
                 width={30}
                 height={30}
+                className={styles.icono}
               />
             </a>
         ))}
