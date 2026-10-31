@@ -143,7 +143,7 @@ Girar 180 grados porque estaba al reves la imagen
     width: auto !important;
     min-width: 60px;
     max-width: 90%;
-    margin: 1rem auto !important;
+    margin: 1rem auto 1rem 1rem !important;
     border-radius: 50px !important;
     border: 1px solid rgba(255, 255, 255, 0.08);
     position: relative;

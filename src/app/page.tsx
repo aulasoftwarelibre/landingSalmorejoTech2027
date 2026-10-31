@@ -6,7 +6,7 @@ import Background from "@/app/components/background/background";
 
 export default function Home() {
   return (
-    <div className="relative" style={{ minHeight: "100vh" }}>
+    <div className="relative" style={{ minHeight: "100svh" }}>
       <Background />
       <div 
         style={{
@@ -14,7 +14,7 @@ export default function Home() {
             zIndex: 10,
             display: "flex",
             flexDirection: "column",
-            minHeight:"100vh",
+            minHeight:"100svh",
           }}>
         <Navbar/>
         <Body />

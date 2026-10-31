@@ -1,8 +1,3 @@
-.text {
-  color: red;
-  text-align: center;
-}
-
 .fondo {
   position: fixed;
   top: 0;
@@ -14,3 +9,17 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 650px){
+
+  .fondo{
+
+    height: 100svh;
+    background-image: url("../../assets/fondomovil.svg");
+    background-size: cover;
+    background-position: center top;
+
+  }
+
+}
+
