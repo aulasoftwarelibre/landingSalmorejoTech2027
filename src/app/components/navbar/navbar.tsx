@@ -97,9 +97,17 @@ export default function Navbar() {
           onClick={() => setIsMobileMenuOpen(false)}
         >
           <Link href="/" className={styles.link}>
-            <Image src={inicioImage} alt="" className={styles.hoverImage} />
+            <Image
+              src={inicioImage}
+              alt=""
+              className={`${styles.hoverImage} ${styles.inicioImage}`}
+            />
             Inicio
-            <Image src={inicioImage} alt="" className={styles.hoverImage} />
+            <Image
+              src={inicioImage}
+              alt=""
+              className={`${styles.hoverImage} ${styles.inicioImage}`}
+            />
           </Link>
         </li>
 
