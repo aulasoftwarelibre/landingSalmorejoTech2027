@@ -123,7 +123,7 @@ export default function Footer() {
           href="mailto:Aulasoftwarelibre@uco.es"
           className={styles.aslLink}
         >
-          Aulasoftwarelibre@uco.es
+          aulasoftwarelibre@uco.es
         </a>
       </p>
       <p>

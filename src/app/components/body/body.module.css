@@ -22,7 +22,7 @@
   width: 409px;
   max-width: none;
   height: 120px;
-  margin: 5px auto 1vh auto;
+  margin: 1em auto 0 auto;
   padding: 10px 0;
   cursor: pointer;
   
@@ -131,5 +131,27 @@
     font-size: 8vw;
     border-radius: 6vw;
     margin: 0 auto;
+  }
+}
+
+.welcomeText {
+  color: black;
+  max-width: 100%;
+  height: auto;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(0rem, 2vw, 3rem);
+  line-height: 100%;
+  letter-spacing: 1px;
+  align-self: center;
+  margin: 0;
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+@media (max-width: 1000px) {
+  .welcomeText{
+    font-size: clamp(1rem, 1vw, 2rem);
+    margin: 0 1em 1em 1em;
+    line-height: 150%;
   }
 }

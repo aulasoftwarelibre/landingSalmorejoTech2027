@@ -78,15 +78,9 @@
 
 }
 
-.aslLink:active{
-
-  transform: scale(1.1);
-
-}
-
 .aslLink:hover{
 
-transform: scale(1.2);
+  transform: scale(1.2);
 
 }
 
@@ -103,6 +97,13 @@ transform: scale(1.2);
 
   width: 30px;
   height: auto;
+  transition: trasform 0.3s ease;
+
+}
+
+.icono:hover{
+
+  transform: scale(1.2);
 
 }
 

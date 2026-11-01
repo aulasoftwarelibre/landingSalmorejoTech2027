@@ -18,6 +18,7 @@ export default function body() {
           priority
         />
       </div>
+      <p className={styles.welcomeText}>¡La mayor cita tecnológica de Córdoba regresa el proximo Viernes 7 de Mayo de 2027!</p>
       <a
           href="https://mailchi.mp/4de2bca2a936/notificaciones-sobre-el-salmorejotech-2026"
           target="_blank"
