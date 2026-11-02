@@ -20,7 +20,7 @@ export default function body() {
       </div>
       <p className={styles.welcomeText}>¡La mayor cita tecnológica de Córdoba regresa el próximo Viernes 7 de Mayo de 2027!</p>
       <a
-          href="https://mailchi.mp/4de2bca2a936/notificaciones-sobre-el-salmorejotech-2026"
+          href="https://mailchi.mp/9ec422d8a380/notificaciones-salmorejotech-2027"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.boton}

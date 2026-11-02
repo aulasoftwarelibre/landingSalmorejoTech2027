@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   basePath: SITE_BASE_PATH,
-  output: "export",
+  output: "standalone",
   trailingSlash: true,
   images: {
     unoptimized: true,
