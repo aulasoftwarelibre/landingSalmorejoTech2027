@@ -1,8 +1,8 @@
 FROM node:26-alpine AS builder
 WORKDIR /app
 
-# Node 25+ ya no trae corepack incluido, se instala vía npm
-RUN npm install -g corepack && corepack enable
+
+RUN npm install -g pnpm@9.15.0
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store \
