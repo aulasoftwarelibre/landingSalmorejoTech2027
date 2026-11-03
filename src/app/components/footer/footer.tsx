@@ -117,7 +117,7 @@ export default function Footer() {
     </div>
     <div className={styles.contacto}>
       <p>
-        ¡Encuéntranos!
+        ¡Contáctanos!
         <br />
         <a
           href="mailto:Aulasoftwarelibre@uco.es"
