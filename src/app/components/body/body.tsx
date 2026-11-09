@@ -12,7 +12,7 @@ export default function body() {
       <div className={styles.image}>
         <Image
           src={logoSalmorejo}
-          alt="Logotipo Salmorejo Tech 2026"
+          alt="Logotipo Salmorejo Tech 2027"
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
           priority
