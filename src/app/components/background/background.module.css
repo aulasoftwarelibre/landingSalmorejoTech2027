@@ -14,7 +14,6 @@
 
   .fondo{
 
-    height: 100svh;
     background-image: url("../../assets/fondomovil.svg");
     background-size: cover;
     background-position: center top;
