@@ -115,7 +115,7 @@ export default function Navbar() {
           onMouseEnter={handleMouseEnter}
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <Link href="https://salmorejo.tech/" className={styles.link} target="_blank">
+          <Link href="https://salmorejo.tech/?all" className={styles.link} target="_blank">
             <Image src={edicionesAnterioresImage} alt="" className={styles.hoverImage} />
             Ediciones Anteriores
             <Image src={edicionesAnterioresImage} alt="" className={styles.hoverImage} />
